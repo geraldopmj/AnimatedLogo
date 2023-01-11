@@ -1,10 +1,11 @@
-:root{
-    --antiquewhite: #FFA74A;
+:root{/* pseudoclass to define variable */
+    --antiquewhite: #FFA74A; /* variable */
 }
 
-html, body{
+html, body{ /* reponsivity */
     display:flex; 
     flex-direction:column;
+    justify-content: center;
     background-color: #005270;
     margin: 0px;
     padding: 0px;
@@ -13,52 +14,43 @@ html, body{
 }
 
 header{
-    margin-top: auto;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
 }
 
-h1{
+h1{ /* title */
     font-family: 'Courier New', Courier, monospace;
     color: #FAEBD7;
 }
 
-main{
-    margin-top: auto;
-    margin-bottom: auto;
+main{ /* center things */
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-#diamond{
-    width: 500px;
+#diamond{ /* used to control the SVG  */
+    width: 300px;
     stroke: var(--antiquewhite);
     stroke-width: 10px;
     fill: var(--antiquewhite);
     stroke-dasharray: 1363;
     stroke-dashoffset: 1363;
     fill: none;
-    animation: 1.5s linear forwards line;
+    animation: 3s linear forwards line;
 }
 
-#letterG{
+#letterG{ /* to control only the letter G */
     width: 280px;
-    stroke: var(--antiquewhite);
-    stroke-width: 1px;
+    stroke:none;
     fill:var(--antiquewhite);
     animation: 3.5s ease forwards G;
     font-family: Helvetica; 
     font-size: 325px;
 }
 
-@keyframes line {
-    0%{stroke-dashoffset: 1363;}
-    100%{stroke-dashoffset: 0;}
-}
-
-@keyframes G {
-    0%{opacity: 0%;}
-    50%{opacity: 0%;}
-    100%{opacity: 100%;}
+@keyframes line { /* defining the animation from start 0% to end 100% */
+    0%{stroke-dashoffset: 1363; fill-opacity: 0%;}
+    50%{stroke-dashoffset: 0; fill-opacity: 0%;}
+    100%{stroke-dashoffset: 0;fill-opacity: 100%;}
 }
