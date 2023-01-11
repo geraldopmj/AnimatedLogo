@@ -33,7 +33,6 @@ main{
 
 #diamond{
     width: 500px;
-    translate: 150px;
     stroke: var(--antiquewhite);
     stroke-width: 10px;
     fill: var(--antiquewhite);
@@ -45,7 +44,6 @@ main{
 
 #letterG{
     width: 280px;
-    translate: -245px;
     stroke: var(--antiquewhite);
     stroke-width: 1px;
     fill:var(--antiquewhite);
